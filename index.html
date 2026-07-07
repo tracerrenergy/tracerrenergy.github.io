@@ -60,6 +60,13 @@
         margin: 0 0 28px;
       }
 
+      .subtitle-note {
+        display: block;
+        margin-top: 10px;
+        font-weight: 700;
+        color: var(--accent-strong);
+      }
+
       .cta-row {
         display: flex;
         flex-wrap: wrap;
@@ -77,12 +84,14 @@
       }
 
       .button-primary {
-        background: var(--accent);
-        color: #050914;
+        background: #4ade80;
+        border-color: #4ade80;
+        color: #05210f;
       }
 
       .button-primary:hover {
-        background: var(--accent-strong);
+        background: #22c55e;
+        border-color: #22c55e;
       }
 
       .button-secondary {
@@ -114,13 +123,30 @@
       }
 
       .card h3 {
-        margin: 0 0 10px;
-        font-size: 1.06rem;
+        margin: 0 0 24px;
+        font-size: 1.22rem;
+        font-weight: 800;
+        line-height: 1.3;
+        color: var(--accent-strong);
       }
 
       .card p {
         margin: 0;
         color: var(--muted);
+      }
+
+      .card ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .card li + li {
+        margin-top: 6px;
+      }
+
+      .card strong {
+        color: var(--text);
       }
 
       .value {
@@ -150,6 +176,11 @@
         Tracerr is the settlement intelligence layer for power markets —
         validating cross-party data, operationalizing market rules, and
         orchestrating settlement workflows from portfolio to asset level.
+        <span class="subtitle-note">
+          We are currently partnering with asset owners, optimisers, suppliers,
+          and trading teams to shape the next generation of settlement
+          infrastructure.
+        </span>
       </p>
       <div class="cta-row">
         <a class="button button-primary" href="mailto:karel@elegast.io">Contact us</a>
@@ -162,27 +193,42 @@
         <div class="pillars">
           <article class="card">
             <h3>Cross-entity validation, audit, and signoff</h3>
-            <p>
-              Ingest and reconcile settlement data across asset owners,
-              optimisers, suppliers, and TSOs; run checks and review flows;
-              produce transparent, auditable signoff.
-            </p>
+            <ul>
+              <li>
+                <strong>Ingest and reconcile settlement data</strong> across
+                asset owners, optimisers, suppliers, and TSOs.
+              </li>
+              <li>Run checks and <strong>review flows</strong>.</li>
+              <li>Produce <strong>transparent, auditable signoff</strong>.</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>TSO settlement rules as APIs</h3>
-            <p>
-              Provide market-specific settlement logic (imbalance, FCR, aFRR,
-              mFRR, penalties, etc.) via APIs for trading, algo, and settlement
-              teams, reducing implementation burden and costly assumption errors.
-            </p>
+            <h3>Settlement rules as APIs</h3>
+            <ul>
+              <li><strong>Reduce implementation burden.</strong></li>
+              <li><strong>Avoid costly assumption errors.</strong></li>
+              <li>
+                Align revenue calculations across settlement, trading, and
+                algorithmic teams.
+              </li>
+              <li>Lower cost of entry into new markets.</li>
+              <li>
+                Support for <strong>ancillary services</strong>, <strong>BRP</strong>
+                and <strong>supplier settlement</strong>.
+              </li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Settlement workflow framework (portfolio to asset)</h3>
-            <p>
-              Model expected revenues at portfolio and asset level, reconcile TSO
-              portfolio-level settlement, allocate corrections down to assets, and
-              support a clear audit trail plus structured dispute handling.
-            </p>
+            <h3>Settlement framework</h3>
+            <ul>
+              <li>
+                <strong>Model expected revenues</strong> at portfolio and asset
+                level.
+              </li>
+              <li>Reconcile <strong>TSO portfolio-level settlement</strong>.</li>
+              <li>Allocate corrections down to assets.</li>
+              <li>Support a clear audit trail and <strong>structured dispute handling</strong>.</li>
+            </ul>
           </article>
         </div>
       </section>
