@@ -4,6 +4,12 @@
 .live-site .concept { --gutter:clamp(22px,5vw,78px); padding-inline:var(--gutter); }
 .live-site .concept-top { border-color:#526a72; }
 .live-site .concept-top .links { display:flex; }
+.audience-switch { display:flex; justify-content:flex-end; align-items:center; gap:clamp(24px,3vw,48px); min-height:60px; border-bottom:1px solid #526a72; }
+.audience-switch > span { margin-right:auto; color:#b9d2cc; font-size:.78rem; }
+.audience-switch a { position:relative; padding:19px 0; color:#dce7e3; font-size:.82rem; font-weight:600; text-decoration:none; white-space:nowrap; }
+.audience-switch a:hover,.audience-switch a[aria-current="page"] { color:var(--site-lime); }
+.audience-switch a[aria-current="page"]::after { content:""; position:absolute; inset:auto 0 -1px; height:2px; background:var(--site-lime); }
+.audience-switch a:focus-visible { outline:2px solid var(--site-lime); outline-offset:5px; }
 .live-site .hero-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(45px,5vw,90px); min-height:660px; padding-block:60px; }
 .live-site .hero-copy h1 { font-size:clamp(3.2rem,5.25vw,5.7rem); }
 .live-site .lead { opacity:1; color:#d6e5e1; }
@@ -84,6 +90,9 @@
   .verticals-grid { grid-template-columns:1fr; gap:36px; }
 }
 @media (max-width:520px) {
+  .audience-switch { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0 12px; padding-top:14px; }
+  .audience-switch > span { grid-column:1 / -1; font-size:.72rem; }
+  .audience-switch a { display:flex; align-items:center; min-height:50px; padding:12px 0; font-size:.72rem; line-height:1.25; white-space:normal; }
   .live-site .hero-grid { padding-block:48px 55px; gap:45px; }
   .live-site .hero-copy h1 { font-size:clamp(2.75rem,11vw,4rem); }
   .live-site .lead { font-size:1rem; }
