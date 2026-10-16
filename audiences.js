@@ -5,7 +5,7 @@ const audienceCopy = {
     copy: {
       'hero-title': 'Know what optimisers changed.',
       'hero-emphasis': 'Know what it means for you.',
-      'hero-lead': 'Optimiser actions shape the data suppliers receive, the positions they manage and the settlement they must explain. Tracerr connects each action, exchange and revision in one transparent record, so supplier teams can trace the impact, reconcile differences and respond with evidence.',
+      'hero-lead': 'Flexibility revenue starts with an optimiser’s asset action, while final settlement may arrive months later. Tracerr links the action, expected revenue, exchanged data and every settlement revision in one shared record. Suppliers can trace the effect on their positions and resolve questions with evidence.',
       'outcomes-title': 'One settlement story, from optimiser action to final run.',
       'outcomes-body': 'See revenue estimates, data received from optimisers and later settlement in the same history. Trace differences to their source and move questions between parties with the evidence attached.',
       'outcomes-step-1': 'Check optimiser activity and the data received.',
@@ -24,7 +24,7 @@ const audienceCopy = {
     copy: {
       'hero-title': 'Know what your optimiser did.',
       'hero-emphasis': 'See what your assets earned.',
-      'hero-lead': 'Your optimiser’s decisions affect asset performance, market revenue and the charges you ultimately see. Tracerr connects actions, estimates, exchanged data and final settlement, so you can verify each outcome with evidence and spot surprises early.',
+      'hero-lead': 'Flexibility revenue starts with your asset’s action, while final settlement may arrive months later. Tracerr links what your optimiser did to expected revenue, exchanged data and each settlement revision. You can verify what your assets earned and ask about differences with the evidence in view.',
       'outcomes-title': 'One asset story, from action to settled revenue.',
       'outcomes-body': 'Compare expected asset revenue with actual settlement. Trace optimiser actions, data changes and fees in one place, with the evidence ready to inspect and query.',
       'outcomes-step-1': 'See asset actions and expected revenue.',
