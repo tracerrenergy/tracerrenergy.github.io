@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="proposals/style.css">
   <link rel="stylesheet" href="site.css">
+  <script src="audiences.js" defer></script>
 </head>
 <body class="standalone live-site">
 <main>
@@ -19,15 +20,21 @@
     <a class="brand" href="#top" aria-label="Tracerr home">tracerr</a>
     <nav class="links" aria-label="Main navigation">
       <a href="#platform">Platform</a>
-      <a href="#developers">For developers</a>
+      <a href="#outcomes">How it works</a>
       <a class="contact" href="mailto:hello@tracerr.com?subject=Tracerr%20platform">Get in touch ↗</a>
     </nav>
   </header>
+  <nav class="audience-switch" aria-label="Explore Tracerr by role">
+    <span>Explore by role</span>
+    <a href="?for=optimisers#top" data-audience-link="optimisers" aria-current="page">For optimisers</a>
+    <a href="?for=suppliers#top" data-audience-link="suppliers">For suppliers</a>
+    <a href="?for=asset-owners#top" data-audience-link="asset-owners">For asset owners</a>
+  </nav>
 
   <section class="hero-grid" aria-labelledby="page-title">
     <div class="hero-copy">
-      <h1 id="page-title">Settlement without the scramble. <em>Answers without the wait.</em></h1>
-      <p class="lead">From the first revenue estimate to final settlement, Tracerr keeps every stakeholder on the same page. Data is governed, exchanged, validated and reconciled in one platform, with the evidence available to inspect and query at every step. A shared workflow for customer questions and remarks keeps settlement moving smoothly when differences arise.</p>
+      <h1 id="page-title"><span data-copy="hero-title">Settlement without the scramble.</span> <em data-copy="hero-emphasis">Answers without the wait.</em></h1>
+      <p class="lead" data-copy="hero-lead">Settlement depends on data moving between suppliers, the TSO, grid operators and asset owners. One broken link can stall work across the chain. Tracerr connects revenue estimates, exchanged data and final settlement in one transparent platform, so every stakeholder can inspect the evidence, resolve questions and keep work moving.</p>
       <div class="hero-actions">
         <a class="action" href="mailto:hello@tracerr.com?subject=Tracerr%20platform">Talk about Tracerr <span aria-hidden="true">↗</span></a>
         <a class="text-link" href="#platform">Explore the platform ↓</a>
@@ -44,20 +51,15 @@
     </div>
   </section>
 
-  <div class="feature-line" aria-label="Platform capabilities">
+  <div class="feature-line" id="platform" aria-label="Platform capabilities">
     <span>Settlement lineage and auditability</span><span>Validation and reconciliation</span><span>Governed data exchange</span><span>Customer questions and issue handling</span><span>AI-ready. Connect any agent.</span>
   </div>
 
-  <section class="support" id="platform" aria-labelledby="platform-heading">
-    <h2 id="platform-heading">Know what the market has earned, before settlement catches up.</h2>
-    <p>Teams should not have to wait for final settlement to understand market performance. Tracerr provides revenue estimates with visible inputs and assumptions, then tracks how later settlement runs confirm or change the picture.</p>
-  </section>
-
   <section class="deep-dive" id="outcomes" aria-labelledby="outcomes-heading">
     <div>
-      <h2 id="outcomes-heading">One revenue story, from estimate to settled outcome.</h2>
-      <p>Market revenue estimates and actual settlements belong in the same auditable history. Tracerr helps every stakeholder see the difference, trace its cause and resolve questions without repeating the investigation.</p>
-      <ol><li>Estimate revenue captured across market activity.</li><li>Validate inputs and reconcile each later settlement run.</li><li>Trace differences and carry customer questions to resolution.</li></ol>
+      <h2 id="outcomes-heading" data-copy="outcomes-title">One revenue story, from estimate to settled outcome.</h2>
+      <p data-copy="outcomes-body">Market revenue estimates and actual settlements belong in the same auditable history. Tracerr helps every stakeholder see the difference, trace its cause and resolve questions without repeating the investigation.</p>
+      <ol><li data-copy="outcomes-step-1">Estimate revenue captured across market activity.</li><li data-copy="outcomes-step-2">Validate inputs and reconcile each later settlement run.</li><li data-copy="outcomes-step-3">Trace differences and carry customer questions to resolution.</li></ol>
     </div>
     <div class="stakeholder-scene" aria-label="A shared Tracerr view for trading, finance, settlement and third parties">
       <span class="stakeholder stakeholder-trading"><span class="stakeholder-icon" aria-hidden="true">T</span>Trading</span>
@@ -68,37 +70,19 @@
     </div>
   </section>
 
-  <section class="developer-section" id="developers" aria-labelledby="developers-heading">
-    <div class="developer-copy">
-      <h2 id="developers-heading">Built for your code. Open to every language.</h2>
-      <p>Use the Python library to capture calculation lineage as your functions run. Connect other languages and existing systems through Tracerr’s HTTP API. Your team keeps its own models, pipelines and tools.</p>
-      <div class="developer-points">
-        <div><strong>Trace calculations</strong><span>Connect each output to the functions and data behind it.</span></div>
-        <div><strong>Integrate flexibly</strong><span>Write and query series through the API from any language.</span></div>
-        <div><strong>Make answers available</strong><span>Give users and agents searchable evidence they can inspect.</span></div>
-      </div>
+  <section class="verticals" id="verticals" aria-labelledby="verticals-heading">
+    <div class="verticals-intro">
+      <h2 id="verticals-heading">Where Tracerr goes to work.</h2>
+      <p data-copy="verticals-intro">For optimisers, reliable revenue and cost estimates depend on rules, account structures and fees that are hard to navigate alone.</p>
     </div>
-    <figure class="code-figure">
-      <div class="code-header"><span>PYTHON · AUTOMATIC LINEAGE</span><span>tracerr</span></div>
-      <pre><code><span class="code-keyword">from</span> tracerr.core <span class="code-keyword">import</span> tracerr
-<span class="code-keyword">from</span> tracerr.tseries <span class="code-keyword">import</span> TSeries
-
-<span class="code-accent">@tracerr.autotrace</span>
-<span class="code-keyword">def</span> <span class="code-function">intraday_revenue</span>(start, end, asset_id):
-    volume = intraday_volume(start, end, asset_id)
-    price = intraday_price(start, end, asset_id)
-    labels = RevenueCatalog.INTRADAY_REVENUE.instantiate(
-        asset_id=asset_id, direction=<span class="code-string">"sell"</span>
-    )
-    <span class="code-keyword">return</span> TSeries(
-        labels=labels,
-        data=volume.data * price.data,
-    )</code></pre>
-      <figcaption>Illustrative Python tracing; source functions and a registered label catalog are defined in your project. Tracerr’s HTTP API supports integrations from any language.</figcaption>
-    </figure>
+    <div class="verticals-grid">
+      <article><span>UNITED KINGDOM</span><h3>Flexibility settlement</h3><p data-copy="uk-body">The BSC is hard to navigate across VLPs, VTPs, suppliers and asset owners. Tracerr makes each data flow and check visible, so optimisers can model expected revenues and understand later settlement.</p></article>
+      <article><span>EUROPEAN UNION</span><h3>Flexibility settlement</h3><p data-copy="eu-body">Asset-level data must roll up into BRP and BSP accounts. Tracerr shows how assets, accounts and settlement outcomes are connected, giving optimisers a checkable view of expected revenues.</p></article>
+      <article><span>GRID ECONOMICS</span><h3>Grid fee modeling</h3><p data-copy="grid-body">Optimisers need to know every grid fee that applies to an asset. Tracerr brings those fees into one model, with visible assumptions and a trace from expected to actual charges.</p></article>
+    </div>
   </section>
 
-  <section class="page-close" aria-labelledby="close-heading"><h2 id="close-heading">One platform for the whole settlement conversation across stakeholders.</h2><a class="action" href="mailto:hello@tracerr.com?subject=Tracerr%20platform">Let’s talk <span aria-hidden="true">↗</span></a></section>
+  <section class="page-close" aria-labelledby="close-heading"><h2 id="close-heading" data-copy="close-title">One platform for the whole settlement conversation across stakeholders.</h2><a class="action" href="mailto:hello@tracerr.com?subject=Tracerr%20platform">Let’s talk <span aria-hidden="true">↗</span></a></section>
   <footer class="page-footer"><span>© Tracerr</span><a href="mailto:hello@tracerr.com">hello@tracerr.com</a></footer>
 </article>
 </main>
