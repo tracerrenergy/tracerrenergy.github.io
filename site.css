@@ -30,8 +30,6 @@
 .platform-visual-foot span:last-child { font-size:1.45rem; line-height:1; }
 .live-site .feature-line { border-color:#607983; }
 .live-site .feature-line span+span { border-color:#607983; }
-.live-site .support { padding-block:75px 90px; border-top:0; }
-.live-site .support p { color:#dce7e3; }
 .coordination-section { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(45px,6vw,100px); align-items:center; margin-inline:calc(-1 * var(--gutter)); padding:105px var(--gutter); background:#101c29; color:#f5f5ed; }
 .coordination-copy h2 { max-width:680px; margin-bottom:24px; font-size:clamp(2.8rem,4.7vw,5.3rem); line-height:1.06; letter-spacing:-.035em; }
 .coordination-copy > p { max-width:610px; color:#dce7e3; font-size:1.08rem; line-height:1.67; }
@@ -102,7 +100,6 @@
   .platform-step { gap:12px; }
   .platform-step strong { font-size:1.3rem; }
   .platform-visual-foot { padding-inline:18px; }
-  .live-site .support { padding-block:55px 65px; }
   .coordination-section { padding-block:65px; }
   .coordination-points > div { grid-template-columns:1fr; gap:5px; }
   .exchange-board-head { padding:18px; }
