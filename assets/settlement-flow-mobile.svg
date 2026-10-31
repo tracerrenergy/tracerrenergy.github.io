@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 740" role="img" aria-labelledby="title desc">
+  <title id="title">Tracerr settlement flow</title>
+  <desc id="desc">Elexon settlement, NESO settlement, and grid costs and licence impact connect to the Tracerr settlement platform. Two clients and one supplier build on Tracerr.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#f9fbff"/><stop offset="1" stop-color="#eef3ff"/></linearGradient>
+    <linearGradient id="core" x2="1" y2="1"><stop stop-color="#2456ed"/><stop offset="1" stop-color="#6944c5"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#243b78" flood-opacity=".11"/></filter>
+    <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1l6 3-6 3" fill="none" stroke="#4269dc" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="arrow-violet" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1l6 3-6 3" fill="none" stroke="#7659c8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="360" height="740" fill="url(#surface)"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <g fill="#65728e" font-size="11" letter-spacing=".8"><text x="24" y="27">CAPTURED REVENUES</text><text x="24" y="335">TRACERR</text><text x="24" y="542">CUSTOMER AND SUPPLIER SETTLEMENT</text></g>
+    <g filter="url(#shadow)"><rect x="22" y="42" width="316" height="230" rx="16" fill="#fff"/><rect x="22" y="349" width="316" height="145" rx="18" fill="url(#core)"/><rect x="22" y="556" width="316" height="156" rx="16" fill="#fff"/></g>
+    <g fill="none" stroke="#dde5f4"><path d="M42 118h276M42 194h276M42 608h276M42 660h276"/></g>
+    <g fill="#345cff"><rect x="42" y="68" width="4" height="25" rx="2"/><rect x="42" y="144" width="4" height="25" rx="2"/><rect x="42" y="220" width="4" height="25" rx="2"/></g>
+    <g fill="#17213d" font-size="17"><text x="59" y="83">Elexon</text><text x="59" y="159">NESO</text><text x="59" y="235">Grid costs &amp; licence impact</text></g>
+    <g fill="#687590" font-size="12"><text x="59" y="103">BSC settlement</text><text x="59" y="179">Balancing services</text><text x="59" y="255">Generation status and network charges</text></g>
+    <path d="M180 285v48" stroke="#4269dc" stroke-width="2.4" fill="none" marker-start="url(#arrow-blue)" marker-end="url(#arrow-blue)"/>
+    <text x="202" y="306" fill="#4269dc" font-size="12" font-weight="400">Settlement twin</text>
+    <circle cx="70" cy="391" r="22" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-opacity=".4"/>
+    <path d="M57 397l9-12 6 8 10-14" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="105" y="391" fill="#fff" font-size="22" font-weight="700">tracerr<tspan fill="#a8efff">.</tspan></text>
+    <text x="105" y="417" fill="#e2e8ff" font-size="15">Settlement platform</text>
+    <path d="M44 440h272" stroke="#fff" stroke-opacity=".35"/>
+    <text x="45" y="467" fill="#e2e8ff" font-size="12">Timeseries + lineage + exchange</text>
+    <path d="M180 505v39" stroke="#7659c8" stroke-width="2.4" fill="none" marker-start="url(#arrow-violet)" marker-end="url(#arrow-violet)"/>
+    <text x="202" y="528" fill="#7659c8" font-size="12" font-weight="400">Build on Tracerr</text>
+    <g fill="#17213d" font-size="16"><text x="43" y="589">Client 01</text><text x="43" y="641">Supplier</text><text x="43" y="693">Client 02</text></g>
+  </g>
+</svg>
